@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do list application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="todo">
-            <h2>TO-DO LIST <img src="images/to-do icon.png"></h2>
+            <h2>TO-DO LIST <img src="images/to-do%20icon.png" alt="To-do icon"></h2>
             <div class="row">
                 <input type="text" placeholder="Add your work" id="input-box">
                 <button onclick="addTask()">Add</button>
@@ -21,7 +22,12 @@
             </ul>
         </div>
     </div> 
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 
+    <script src="Firebaseconfig.js"></script>
+    <script src="note.js"></script>
 </body>
-<script src="note.js"></script>
+
 </html>
